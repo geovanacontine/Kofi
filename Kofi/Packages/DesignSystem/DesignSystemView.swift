@@ -30,8 +30,8 @@ public struct DesignSystemView<Content: View>: View {
             .onChange(of: colorScheme) { oldScheme, newScheme in
                 didChangeThemeMode(to: newScheme.designThemeMode)
             }
-            .tint(currentTheme.tokens.color.brand.primary10)
-            .accentColor(currentTheme.tokens.color.brand.primary10)
+            .tint(currentTheme.tokens.color.brand.primary)
+            .accentColor(currentTheme.tokens.color.brand.primary)
     }
     
     private func didChangeThemeMode(to newThemeMode: DesignThemeMode) {

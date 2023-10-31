@@ -18,7 +18,6 @@
 		0103BB7A2AF12BA7009ACF10 /* Opacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB632AF127BF009ACF10 /* Opacity.swift */; };
 		0103BB7B2AF12BA8009ACF10 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB642AF127BF009ACF10 /* Shadow.swift */; };
 		0103BB7C2AF12BAA009ACF10 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB652AF127BF009ACF10 /* Fonts.swift */; };
-		0103BB7D2AF12BAB009ACF10 /* BorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB662AF127BF009ACF10 /* BorderRadius.swift */; };
 		0103BB7E2AF12BAD009ACF10 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB672AF127BF009ACF10 /* Border.swift */; };
 		0103BB7F2AF12BAE009ACF10 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB682AF127BF009ACF10 /* Padding.swift */; };
 		0103BB802AF12BB0009ACF10 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB692AF127BF009ACF10 /* Colors.swift */; };
@@ -48,7 +47,6 @@
 		0103BB632AF127BF009ACF10 /* Opacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opacity.swift; sourceTree = "<group>"; };
 		0103BB642AF127BF009ACF10 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
 		0103BB652AF127BF009ACF10 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		0103BB662AF127BF009ACF10 /* BorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderRadius.swift; sourceTree = "<group>"; };
 		0103BB672AF127BF009ACF10 /* Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
 		0103BB682AF127BF009ACF10 /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
 		0103BB692AF127BF009ACF10 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 				0103BB632AF127BF009ACF10 /* Opacity.swift */,
 				0103BB642AF127BF009ACF10 /* Shadow.swift */,
 				0103BB652AF127BF009ACF10 /* Fonts.swift */,
-				0103BB662AF127BF009ACF10 /* BorderRadius.swift */,
 				0103BB672AF127BF009ACF10 /* Border.swift */,
 				0103BB682AF127BF009ACF10 /* Padding.swift */,
 				0103BB692AF127BF009ACF10 /* Colors.swift */,
@@ -307,7 +304,6 @@
 				0103BB4F2AF123B1009ACF10 /* Rating.swift in Sources */,
 				0103BB7C2AF12BAA009ACF10 /* Fonts.swift in Sources */,
 				0103BB522AF123C9009ACF10 /* MockDatabase.swift in Sources */,
-				0103BB7D2AF12BAB009ACF10 /* BorderRadius.swift in Sources */,
 				0103BB762AF12B9D009ACF10 /* DesignTheme.swift in Sources */,
 				0167EC622AEC45D9006469C1 /* ContentView.swift in Sources */,
 				0103BB832AF12BF0009ACF10 /* ColorScheme+Extension.swift in Sources */,

@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @Environment(\.designTokens) var tokens
-    
     var body: some View {
-        Text("Kofi")
-            .textStyle(
-                tokens.font.largeTitleEmphasized,
-                withColor: tokens.color.brand.primary10
-            )
+        VStack {
+            Text("Kofi")
+                .style(
+                    .largeTitle,
+                    weight: .bold,
+                    color: .highlight(color: .feedbackNegative)
+                )
+            
+            Rectangle()
+                .color(.feedbackAlert)
+                .frame(width: 100, height: 100)
+                .cornerRadius(size: .circle)
+                .shadow(type: .thick)
+        }
     }
 }
 

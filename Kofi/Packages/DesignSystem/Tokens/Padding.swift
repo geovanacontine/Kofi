@@ -1,18 +1,38 @@
 import SwiftUI
 
-public struct Padding {
-    public let none = 0
-    public let quarck = 4
-    public let nano = 8
-    public let micro = 12
-    public let xxxs = 16
-    public let xxs = 24
-    public let xs = 32
-    public let sm = 40
-    public let md = 48
-    public let lg = 56
-    public let xl = 72
-    public let xxl = 96
-    public let xxxl = 120
-    public let huge = 160
+public enum PaddingSize: CGFloat {
+    case none = 0
+    case quarck = 4
+    case nano = 8
+    case micro = 12
+    case xxxs = 16
+    case xxs = 24
+    case xs = 32
+    case sm = 40
+    case md = 48
+    case lg = 56
+    case xl = 72
+    case xxl = 96
+    case xxxl = 120
+}
+
+// MARK: - Modifier
+
+struct PaddingModifier: ViewModifier {
+    
+    let edges: Edge.Set
+    let size: PaddingSize
+    
+    func body(content: Content) -> some View {
+        content
+            .padding(edges, size.rawValue)
+    }
+}
+
+public extension View {
+    func padding(_ edges: Edge.Set = .all, size: PaddingSize = .xxxs) -> some View {
+        modifier(
+            PaddingModifier(edges: edges, size: size)
+        )
+    }
 }

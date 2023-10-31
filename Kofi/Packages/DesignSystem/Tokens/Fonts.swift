@@ -1,57 +1,28 @@
 import SwiftUI
 
-public struct Fonts {
-    
-    // LargeTitle
-    public let largeTitle = FontStyle(textStyle: .largeTitle, weight: .regular)
-    public let largeTitleEmphasized = FontStyle(textStyle: .largeTitle, weight: .bold)
-    
-    // Title
-    public let title1 = FontStyle(textStyle: .title, weight: .regular)
-    public let title1Emphasized = FontStyle(textStyle: .title, weight: .bold)
-    
-    // Title2
-    public let title2 = FontStyle(textStyle: .title2, weight: .regular)
-    public let title2Emphasized = FontStyle(textStyle: .title2, weight: .bold)
-    
-    // Title3
-    public let title3 = FontStyle(textStyle: .title3, weight: .regular)
-    public let title3Emphasized = FontStyle(textStyle: .title3, weight: .semibold)
-    
-    // Headline
-    public let headline = FontStyle(textStyle: .headline, weight: .semibold)
-    public let headlineEmphasized = FontStyle(textStyle: .headline, weight: .heavy)
-    
-    // Body
-    public let body = FontStyle(textStyle: .body, weight: .regular)
-    public let bodyEmphasized = FontStyle(textStyle: .body, weight: .semibold)
-    
-    // Callout
-    public let callout = FontStyle(textStyle: .callout, weight: .regular)
-    public let calloutEmphasized = FontStyle(textStyle: .callout, weight: .semibold)
-    
-    // Subheadline
-    public let subheadline = FontStyle(textStyle: .subheadline, weight: .regular)
-    public let subheadlineEmphasized = FontStyle(textStyle: .subheadline, weight: .semibold)
-    
-    // Footnote
-    public let footnote = FontStyle(textStyle: .footnote, weight: .regular)
-    public let footnoteEmphasized = FontStyle(textStyle: .footnote, weight: .semibold)
-    
-    // Caption
-    public let caption1 = FontStyle(textStyle: .caption, weight: .regular)
-    public let caption1Emphasized = FontStyle(textStyle: .caption, weight: .medium)
-    
-    // Caption2
-    public let caption2 = FontStyle(textStyle: .caption2, weight: .regular)
-    public let caption2Emphasized = FontStyle(textStyle: .caption2, weight: .semibold)
-}
-
 // MARK: - FontStyle
 
 public struct FontStyle {
-    let textStyle: Font.TextStyle
+    let type: Font.TextStyle
     let weight: Font.Weight
+    let color: TextColor
+    
+    public init(
+        type: Font.TextStyle,
+        weight: Font.Weight = .regular,
+        color: TextColor = .primary
+    ) {
+        self.type = type
+        self.weight = weight
+        self.color = color
+    }
+}
+
+public enum TextColor {
+    case primary
+    case secondary
+    case tertiary
+    case highlight(color: ColorType)
 }
 
 // MARK: - TextStyleModifier
@@ -61,21 +32,33 @@ struct TextStyleModifier: ViewModifier {
     @Environment(\.designTokens) var tokens
     
     let style: FontStyle
-    let customColor: Color?
     
     func body(content: Content) -> some View {
         content
-            .font(.system(style.textStyle, weight: style.weight))
-            .foregroundColor(customColor ?? tokens.color.label.primary)
+            .font(.system(style.type, weight: style.weight))
+            .foregroundStyle(textColor)
+    }
+    
+    private var textColor: Color {
+        switch style.color {
+        case .primary: tokens.color.text.primary
+        case .secondary: tokens.color.text.secondary
+        case .tertiary: tokens.color.text.tertiary
+        case .highlight(let color): color.color(tokens: tokens)
+        }
     }
 }
 
 // MARK: - Style
 
 public extension Text {
-    func textStyle(_ style: FontStyle, withColor color: Color? = nil) -> some View {
+    func style(
+        _ type: Font.TextStyle,
+        weight: Font.Weight = .regular,
+        color: TextColor = .primary
+    ) -> some View {
         modifier(
-            TextStyleModifier(style: style, customColor: color)
+            TextStyleModifier(style: .init(type: type, weight: weight, color: color))
         )
     }
 }

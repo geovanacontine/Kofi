@@ -1,12 +1,29 @@
 import SwiftUI
 
-// MARK: - Token
+public enum OpacityType: Double {
+    case opaque = 1.0
+    case semiOpaque = 0.72
+    case intense = 0.64
+    case medium = 0.32
+    case light = 0.16
+    case semiTransparent = 0.08
+}
 
-public struct Opacity {
-    public let opaque = 1.0
-    public let semiOpaque = 0.72
-    public let intense = 0.64
-    public let medium = 0.32
-    public let light = 0.16
-    public let semiTransparent = 0.08
+// MARK: - Modifier
+
+struct OpacityModifier: ViewModifier {
+    
+    let type: OpacityType
+    
+    func body(content: Content) -> some View {
+        content.opacity(type.rawValue)
+    }
+}
+
+public extension View {
+    func opacity(type: OpacityType) -> some View {
+        modifier(
+            OpacityModifier(type: type)
+        )
+    }
 }
