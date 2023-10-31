@@ -45,7 +45,6 @@
 		0103BB4A2AF12387009ACF10 /* MachineLearning */ = {
 			isa = PBXGroup;
 			children = (
-				01C1BE6B2AF01F7D00042751 /* CoffeeRecommendation.mlmodel */,
 				017159472AEFEA69009279DA /* Recommender.swift */,
 			);
 			path = MachineLearning;
@@ -66,6 +65,25 @@
 				0103BB512AF123C9009ACF10 /* MockDatabase.swift */,
 			);
 			path = Persistency;
+			sourceTree = "<group>";
+		};
+		0103BB532AF12453009ACF10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01C1BE6B2AF01F7D00042751 /* CoffeeRecommendation.mlmodel */,
+				0167EC632AEC45DA006469C1 /* Assets.xcassets */,
+				0167EC652AEC45DA006469C1 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0103BB542AF12459009ACF10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0167EC5F2AEC45D9006469C1 /* KofiApp.swift */,
+				0167EC612AEC45D9006469C1 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0167EC532AEC45D9006469C1 = {
@@ -104,10 +122,8 @@
 		017159452AEFEA19009279DA /* App */ = {
 			isa = PBXGroup;
 			children = (
-				0167EC5F2AEC45D9006469C1 /* KofiApp.swift */,
-				0167EC612AEC45D9006469C1 /* ContentView.swift */,
-				0167EC632AEC45DA006469C1 /* Assets.xcassets */,
-				0167EC652AEC45DA006469C1 /* Preview Content */,
+				0103BB542AF12459009ACF10 /* Views */,
+				0103BB532AF12453009ACF10 /* Resources */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -331,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Kofi/App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Kofi/App/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 4FV3MXV8J6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -363,7 +379,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Kofi/App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Kofi/App/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 4FV3MXV8J6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
