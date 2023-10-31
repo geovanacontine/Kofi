@@ -10,6 +10,22 @@
 		0103BB4D2AF123A5009ACF10 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB4C2AF123A5009ACF10 /* Coffee.swift */; };
 		0103BB4F2AF123B1009ACF10 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB4E2AF123B1009ACF10 /* Rating.swift */; };
 		0103BB522AF123C9009ACF10 /* MockDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB512AF123C9009ACF10 /* MockDatabase.swift */; };
+		0103BB742AF127BF009ACF10 /* DesignSystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB592AF127BF009ACF10 /* DesignSystemView.swift */; };
+		0103BB762AF12B9D009ACF10 /* DesignTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB5B2AF127BF009ACF10 /* DesignTheme.swift */; };
+		0103BB772AF12B9F009ACF10 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB6B2AF127BF009ACF10 /* DefaultTheme.swift */; };
+		0103BB782AF12BA1009ACF10 /* DesignThemeMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB5C2AF127BF009ACF10 /* DesignThemeMode.swift */; };
+		0103BB792AF12BA3009ACF10 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB5F2AF127BF009ACF10 /* DesignTokens.swift */; };
+		0103BB7A2AF12BA7009ACF10 /* Opacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB632AF127BF009ACF10 /* Opacity.swift */; };
+		0103BB7B2AF12BA8009ACF10 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB642AF127BF009ACF10 /* Shadow.swift */; };
+		0103BB7C2AF12BAA009ACF10 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB652AF127BF009ACF10 /* Fonts.swift */; };
+		0103BB7D2AF12BAB009ACF10 /* BorderRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB662AF127BF009ACF10 /* BorderRadius.swift */; };
+		0103BB7E2AF12BAD009ACF10 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB672AF127BF009ACF10 /* Border.swift */; };
+		0103BB7F2AF12BAE009ACF10 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB682AF127BF009ACF10 /* Padding.swift */; };
+		0103BB802AF12BB0009ACF10 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB692AF127BF009ACF10 /* Colors.swift */; };
+		0103BB812AF12BEC009ACF10 /* DesignTokensKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB5D2AF127BF009ACF10 /* DesignTokensKey.swift */; };
+		0103BB822AF12BEE009ACF10 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB5E2AF127BF009ACF10 /* Color+Extensions.swift */; };
+		0103BB832AF12BF0009ACF10 /* ColorScheme+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB602AF127BF009ACF10 /* ColorScheme+Extension.swift */; };
+		0103BB862AF12D44009ACF10 /* KofiLightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB852AF12D44009ACF10 /* KofiLightTheme.swift */; };
 		0167EC602AEC45D9006469C1 /* KofiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167EC5F2AEC45D9006469C1 /* KofiApp.swift */; };
 		0167EC622AEC45D9006469C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167EC612AEC45D9006469C1 /* ContentView.swift */; };
 		0167EC642AEC45DA006469C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0167EC632AEC45DA006469C1 /* Assets.xcassets */; };
@@ -22,6 +38,22 @@
 		0103BB4C2AF123A5009ACF10 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		0103BB4E2AF123B1009ACF10 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		0103BB512AF123C9009ACF10 /* MockDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDatabase.swift; sourceTree = "<group>"; };
+		0103BB592AF127BF009ACF10 /* DesignSystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemView.swift; sourceTree = "<group>"; };
+		0103BB5B2AF127BF009ACF10 /* DesignTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTheme.swift; sourceTree = "<group>"; };
+		0103BB5C2AF127BF009ACF10 /* DesignThemeMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignThemeMode.swift; sourceTree = "<group>"; };
+		0103BB5D2AF127BF009ACF10 /* DesignTokensKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokensKey.swift; sourceTree = "<group>"; };
+		0103BB5E2AF127BF009ACF10 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		0103BB5F2AF127BF009ACF10 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		0103BB602AF127BF009ACF10 /* ColorScheme+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorScheme+Extension.swift"; sourceTree = "<group>"; };
+		0103BB632AF127BF009ACF10 /* Opacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opacity.swift; sourceTree = "<group>"; };
+		0103BB642AF127BF009ACF10 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		0103BB652AF127BF009ACF10 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		0103BB662AF127BF009ACF10 /* BorderRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderRadius.swift; sourceTree = "<group>"; };
+		0103BB672AF127BF009ACF10 /* Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
+		0103BB682AF127BF009ACF10 /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
+		0103BB692AF127BF009ACF10 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0103BB6B2AF127BF009ACF10 /* DefaultTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
+		0103BB852AF12D44009ACF10 /* KofiLightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KofiLightTheme.swift; sourceTree = "<group>"; };
 		0167EC5C2AEC45D9006469C1 /* Kofi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kofi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0167EC5F2AEC45D9006469C1 /* KofiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KofiApp.swift; sourceTree = "<group>"; };
 		0167EC612AEC45D9006469C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +118,68 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0103BB552AF12753009ACF10 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				0103BB592AF127BF009ACF10 /* DesignSystemView.swift */,
+				0103BB5A2AF127BF009ACF10 /* Models */,
+				0103BB622AF127BF009ACF10 /* Tokens */,
+				0103BB752AF1286D009ACF10 /* Extensions */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		0103BB562AF1275B009ACF10 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				0103BB552AF12753009ACF10 /* DesignSystem */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		0103BB5A2AF127BF009ACF10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0103BB6B2AF127BF009ACF10 /* DefaultTheme.swift */,
+				0103BB5B2AF127BF009ACF10 /* DesignTheme.swift */,
+				0103BB5C2AF127BF009ACF10 /* DesignThemeMode.swift */,
+				0103BB5F2AF127BF009ACF10 /* DesignTokens.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0103BB622AF127BF009ACF10 /* Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				0103BB632AF127BF009ACF10 /* Opacity.swift */,
+				0103BB642AF127BF009ACF10 /* Shadow.swift */,
+				0103BB652AF127BF009ACF10 /* Fonts.swift */,
+				0103BB662AF127BF009ACF10 /* BorderRadius.swift */,
+				0103BB672AF127BF009ACF10 /* Border.swift */,
+				0103BB682AF127BF009ACF10 /* Padding.swift */,
+				0103BB692AF127BF009ACF10 /* Colors.swift */,
+			);
+			path = Tokens;
+			sourceTree = "<group>";
+		};
+		0103BB752AF1286D009ACF10 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0103BB5D2AF127BF009ACF10 /* DesignTokensKey.swift */,
+				0103BB5E2AF127BF009ACF10 /* Color+Extensions.swift */,
+				0103BB602AF127BF009ACF10 /* ColorScheme+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0103BB842AF12D33009ACF10 /* DesignTheme */ = {
+			isa = PBXGroup;
+			children = (
+				0103BB852AF12D44009ACF10 /* KofiLightTheme.swift */,
+			);
+			path = DesignTheme;
+			sourceTree = "<group>";
+		};
 		0167EC532AEC45D9006469C1 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +201,7 @@
 			children = (
 				017159452AEFEA19009279DA /* App */,
 				017159462AEFEA20009279DA /* Business */,
+				0103BB562AF1275B009ACF10 /* Packages */,
 			);
 			path = Kofi;
 			sourceTree = "<group>";
@@ -131,6 +226,7 @@
 		017159462AEFEA20009279DA /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				0103BB842AF12D33009ACF10 /* DesignTheme */,
 				0103BB502AF123C0009ACF10 /* Persistency */,
 				0103BB4B2AF1239A009ACF10 /* Models */,
 				0103BB4A2AF12387009ACF10 /* MachineLearning */,
@@ -209,12 +305,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				0103BB4F2AF123B1009ACF10 /* Rating.swift in Sources */,
+				0103BB7C2AF12BAA009ACF10 /* Fonts.swift in Sources */,
 				0103BB522AF123C9009ACF10 /* MockDatabase.swift in Sources */,
+				0103BB7D2AF12BAB009ACF10 /* BorderRadius.swift in Sources */,
+				0103BB762AF12B9D009ACF10 /* DesignTheme.swift in Sources */,
 				0167EC622AEC45D9006469C1 /* ContentView.swift in Sources */,
+				0103BB832AF12BF0009ACF10 /* ColorScheme+Extension.swift in Sources */,
+				0103BB742AF127BF009ACF10 /* DesignSystemView.swift in Sources */,
+				0103BB7B2AF12BA8009ACF10 /* Shadow.swift in Sources */,
+				0103BB772AF12B9F009ACF10 /* DefaultTheme.swift in Sources */,
+				0103BB7E2AF12BAD009ACF10 /* Border.swift in Sources */,
 				01C1BE6C2AF01F7D00042751 /* CoffeeRecommendation.mlmodel in Sources */,
+				0103BB822AF12BEE009ACF10 /* Color+Extensions.swift in Sources */,
+				0103BB812AF12BEC009ACF10 /* DesignTokensKey.swift in Sources */,
+				0103BB862AF12D44009ACF10 /* KofiLightTheme.swift in Sources */,
+				0103BB7F2AF12BAE009ACF10 /* Padding.swift in Sources */,
+				0103BB802AF12BB0009ACF10 /* Colors.swift in Sources */,
+				0103BB792AF12BA3009ACF10 /* DesignTokens.swift in Sources */,
 				0167EC602AEC45D9006469C1 /* KofiApp.swift in Sources */,
 				017159482AEFEA69009279DA /* Recommender.swift in Sources */,
+				0103BB782AF12BA1009ACF10 /* DesignThemeMode.swift in Sources */,
 				0103BB4D2AF123A5009ACF10 /* Coffee.swift in Sources */,
+				0103BB7A2AF12BA7009ACF10 /* Opacity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

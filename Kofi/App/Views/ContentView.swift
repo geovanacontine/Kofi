@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @Environment(\.designTokens) var tokens
+    
     var body: some View {
-        Text("Content View")
+        Text("Kofi")
+            .textStyle(
+                tokens.font.largeTitleEmphasized,
+                withColor: tokens.color.brand.primary10
+            )
     }
 }
 

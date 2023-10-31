@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct KofiApp: App {
+    
+    private var supportedThemes: [DesignTheme] = [KofiLightTheme()]
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DesignSystemView(themes: supportedThemes) {
+                ContentView()
+            }
         }
     }
 }
