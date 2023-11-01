@@ -3,61 +3,54 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0103BB4D2AF123A5009ACF10 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB4C2AF123A5009ACF10 /* Coffee.swift */; };
 		0103BB4F2AF123B1009ACF10 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB4E2AF123B1009ACF10 /* Rating.swift */; };
-		0103BB522AF123C9009ACF10 /* MockDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB512AF123C9009ACF10 /* MockDatabase.swift */; };
-		0103BB742AF127BF009ACF10 /* DesignSystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB592AF127BF009ACF10 /* DesignSystemView.swift */; };
-		0103BB762AF12B9D009ACF10 /* DesignTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB5B2AF127BF009ACF10 /* DesignTheme.swift */; };
-		0103BB772AF12B9F009ACF10 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB6B2AF127BF009ACF10 /* DefaultTheme.swift */; };
-		0103BB782AF12BA1009ACF10 /* DesignThemeMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB5C2AF127BF009ACF10 /* DesignThemeMode.swift */; };
-		0103BB792AF12BA3009ACF10 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB5F2AF127BF009ACF10 /* DesignTokens.swift */; };
-		0103BB7A2AF12BA7009ACF10 /* Opacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB632AF127BF009ACF10 /* Opacity.swift */; };
-		0103BB7B2AF12BA8009ACF10 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB642AF127BF009ACF10 /* Shadow.swift */; };
-		0103BB7C2AF12BAA009ACF10 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB652AF127BF009ACF10 /* Fonts.swift */; };
-		0103BB7E2AF12BAD009ACF10 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB672AF127BF009ACF10 /* Border.swift */; };
-		0103BB7F2AF12BAE009ACF10 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB682AF127BF009ACF10 /* Padding.swift */; };
-		0103BB802AF12BB0009ACF10 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB692AF127BF009ACF10 /* Colors.swift */; };
-		0103BB812AF12BEC009ACF10 /* DesignTokensKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB5D2AF127BF009ACF10 /* DesignTokensKey.swift */; };
-		0103BB822AF12BEE009ACF10 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB5E2AF127BF009ACF10 /* Color+Extensions.swift */; };
-		0103BB832AF12BF0009ACF10 /* ColorScheme+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB602AF127BF009ACF10 /* ColorScheme+Extension.swift */; };
+		0103BB522AF123C9009ACF10 /* LocalDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB512AF123C9009ACF10 /* LocalDatabase.swift */; };
 		0103BB862AF12D44009ACF10 /* KofiLightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB852AF12D44009ACF10 /* KofiLightTheme.swift */; };
+		0103BB8B2AF1664A009ACF10 /* KofiThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB8A2AF1664A009ACF10 /* KofiThemes.swift */; };
+		0103BB922AF16B22009ACF10 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103BB912AF16B22009ACF10 /* Action.swift */; };
+		012F94082AF2DBEB00205E42 /* RatingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012F94072AF2DBEB00205E42 /* RatingState.swift */; };
+		012F940A2AF2DC1000205E42 /* ExploreState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012F94092AF2DC1000205E42 /* ExploreState.swift */; };
+		0135C1602AF18ED100CA541F /* ForYouCoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0135C15F2AF18ED100CA541F /* ForYouCoffeeView.swift */; };
 		0167EC602AEC45D9006469C1 /* KofiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167EC5F2AEC45D9006469C1 /* KofiApp.swift */; };
 		0167EC622AEC45D9006469C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167EC612AEC45D9006469C1 /* ContentView.swift */; };
 		0167EC642AEC45DA006469C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0167EC632AEC45DA006469C1 /* Assets.xcassets */; };
 		0167EC672AEC45DA006469C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0167EC662AEC45DA006469C1 /* Preview Assets.xcassets */; };
-		017159482AEFEA69009279DA /* Recommender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017159472AEFEA69009279DA /* Recommender.swift */; };
+		017159482AEFEA69009279DA /* RatingEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017159472AEFEA69009279DA /* RatingEffects.swift */; };
+		01845B292AF2BD420051F182 /* GeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 01845B282AF2BD420051F182 /* GeoKit */; };
+		01845B2C2AF2C18B0051F182 /* RatingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01845B2B2AF2C18B0051F182 /* RatingAction.swift */; };
+		01845B2E2AF2C71D0051F182 /* RatingMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01845B2D2AF2C71D0051F182 /* RatingMapper.swift */; };
+		01845B312AF2C8B50051F182 /* ExploreAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01845B302AF2C8B50051F182 /* ExploreAction.swift */; };
+		01845B332AF2C8D10051F182 /* ExploreMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01845B322AF2C8D10051F182 /* ExploreMapper.swift */; };
+		01845B352AF2C8EB0051F182 /* ExploreEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01845B342AF2C8EB0051F182 /* ExploreEffects.swift */; };
 		01C1BE6C2AF01F7D00042751 /* CoffeeRecommendation.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 01C1BE6B2AF01F7D00042751 /* CoffeeRecommendation.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0103BB4C2AF123A5009ACF10 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		0103BB4E2AF123B1009ACF10 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
-		0103BB512AF123C9009ACF10 /* MockDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDatabase.swift; sourceTree = "<group>"; };
-		0103BB592AF127BF009ACF10 /* DesignSystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemView.swift; sourceTree = "<group>"; };
-		0103BB5B2AF127BF009ACF10 /* DesignTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTheme.swift; sourceTree = "<group>"; };
-		0103BB5C2AF127BF009ACF10 /* DesignThemeMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignThemeMode.swift; sourceTree = "<group>"; };
-		0103BB5D2AF127BF009ACF10 /* DesignTokensKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokensKey.swift; sourceTree = "<group>"; };
-		0103BB5E2AF127BF009ACF10 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
-		0103BB5F2AF127BF009ACF10 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
-		0103BB602AF127BF009ACF10 /* ColorScheme+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorScheme+Extension.swift"; sourceTree = "<group>"; };
-		0103BB632AF127BF009ACF10 /* Opacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opacity.swift; sourceTree = "<group>"; };
-		0103BB642AF127BF009ACF10 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
-		0103BB652AF127BF009ACF10 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		0103BB672AF127BF009ACF10 /* Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
-		0103BB682AF127BF009ACF10 /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
-		0103BB692AF127BF009ACF10 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		0103BB6B2AF127BF009ACF10 /* DefaultTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
+		0103BB512AF123C9009ACF10 /* LocalDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabase.swift; sourceTree = "<group>"; };
 		0103BB852AF12D44009ACF10 /* KofiLightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KofiLightTheme.swift; sourceTree = "<group>"; };
+		0103BB8A2AF1664A009ACF10 /* KofiThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KofiThemes.swift; sourceTree = "<group>"; };
+		0103BB912AF16B22009ACF10 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		012F94072AF2DBEB00205E42 /* RatingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingState.swift; sourceTree = "<group>"; };
+		012F94092AF2DC1000205E42 /* ExploreState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreState.swift; sourceTree = "<group>"; };
+		0135C15F2AF18ED100CA541F /* ForYouCoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouCoffeeView.swift; sourceTree = "<group>"; };
 		0167EC5C2AEC45D9006469C1 /* Kofi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kofi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0167EC5F2AEC45D9006469C1 /* KofiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KofiApp.swift; sourceTree = "<group>"; };
 		0167EC612AEC45D9006469C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0167EC632AEC45DA006469C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0167EC662AEC45DA006469C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		017159472AEFEA69009279DA /* Recommender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommender.swift; sourceTree = "<group>"; };
+		017159472AEFEA69009279DA /* RatingEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingEffects.swift; sourceTree = "<group>"; };
+		01845B2B2AF2C18B0051F182 /* RatingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingAction.swift; sourceTree = "<group>"; };
+		01845B2D2AF2C71D0051F182 /* RatingMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingMapper.swift; sourceTree = "<group>"; };
+		01845B302AF2C8B50051F182 /* ExploreAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreAction.swift; sourceTree = "<group>"; };
+		01845B322AF2C8D10051F182 /* ExploreMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreMapper.swift; sourceTree = "<group>"; };
+		01845B342AF2C8EB0051F182 /* ExploreEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreEffects.swift; sourceTree = "<group>"; };
 		01C1BE6B2AF01F7D00042751 /* CoffeeRecommendation.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CoffeeRecommendation.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,20 +59,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01845B292AF2BD420051F182 /* GeoKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0103BB4A2AF12387009ACF10 /* MachineLearning */ = {
-			isa = PBXGroup;
-			children = (
-				017159472AEFEA69009279DA /* Recommender.swift */,
-			);
-			path = MachineLearning;
-			sourceTree = "<group>";
-		};
 		0103BB4B2AF1239A009ACF10 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +78,7 @@
 		0103BB502AF123C0009ACF10 /* Persistency */ = {
 			isa = PBXGroup;
 			children = (
-				0103BB512AF123C9009ACF10 /* MockDatabase.swift */,
+				0103BB512AF123C9009ACF10 /* LocalDatabase.swift */,
 			);
 			path = Persistency;
 			sourceTree = "<group>";
@@ -100,7 +86,6 @@
 		0103BB532AF12453009ACF10 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				01C1BE6B2AF01F7D00042751 /* CoffeeRecommendation.mlmodel */,
 				0167EC632AEC45DA006469C1 /* Assets.xcassets */,
 				0167EC652AEC45DA006469C1 /* Preview Content */,
 			);
@@ -112,69 +97,28 @@
 			children = (
 				0167EC5F2AEC45D9006469C1 /* KofiApp.swift */,
 				0167EC612AEC45D9006469C1 /* ContentView.swift */,
+				0135C15F2AF18ED100CA541F /* ForYouCoffeeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0103BB552AF12753009ACF10 /* DesignSystem */ = {
+		0103BB842AF12D33009ACF10 /* Branding */ = {
 			isa = PBXGroup;
 			children = (
-				0103BB592AF127BF009ACF10 /* DesignSystemView.swift */,
-				0103BB5A2AF127BF009ACF10 /* Models */,
-				0103BB622AF127BF009ACF10 /* Tokens */,
-				0103BB752AF1286D009ACF10 /* Extensions */,
-			);
-			path = DesignSystem;
-			sourceTree = "<group>";
-		};
-		0103BB562AF1275B009ACF10 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				0103BB552AF12753009ACF10 /* DesignSystem */,
-			);
-			path = Packages;
-			sourceTree = "<group>";
-		};
-		0103BB5A2AF127BF009ACF10 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				0103BB6B2AF127BF009ACF10 /* DefaultTheme.swift */,
-				0103BB5B2AF127BF009ACF10 /* DesignTheme.swift */,
-				0103BB5C2AF127BF009ACF10 /* DesignThemeMode.swift */,
-				0103BB5F2AF127BF009ACF10 /* DesignTokens.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		0103BB622AF127BF009ACF10 /* Tokens */ = {
-			isa = PBXGroup;
-			children = (
-				0103BB632AF127BF009ACF10 /* Opacity.swift */,
-				0103BB642AF127BF009ACF10 /* Shadow.swift */,
-				0103BB652AF127BF009ACF10 /* Fonts.swift */,
-				0103BB672AF127BF009ACF10 /* Border.swift */,
-				0103BB682AF127BF009ACF10 /* Padding.swift */,
-				0103BB692AF127BF009ACF10 /* Colors.swift */,
-			);
-			path = Tokens;
-			sourceTree = "<group>";
-		};
-		0103BB752AF1286D009ACF10 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				0103BB5D2AF127BF009ACF10 /* DesignTokensKey.swift */,
-				0103BB5E2AF127BF009ACF10 /* Color+Extensions.swift */,
-				0103BB602AF127BF009ACF10 /* ColorScheme+Extension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		0103BB842AF12D33009ACF10 /* DesignTheme */ = {
-			isa = PBXGroup;
-			children = (
+				0103BB8A2AF1664A009ACF10 /* KofiThemes.swift */,
 				0103BB852AF12D44009ACF10 /* KofiLightTheme.swift */,
 			);
-			path = DesignTheme;
+			path = Branding;
+			sourceTree = "<group>";
+		};
+		0103BB8E2AF168FD009ACF10 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0103BB912AF16B22009ACF10 /* Action.swift */,
+				01845B2A2AF2C1820051F182 /* Rating */,
+				01845B2F2AF2C89D0051F182 /* Explore */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 		0167EC532AEC45D9006469C1 = {
@@ -198,7 +142,6 @@
 			children = (
 				017159452AEFEA19009279DA /* App */,
 				017159462AEFEA20009279DA /* Business */,
-				0103BB562AF1275B009ACF10 /* Packages */,
 			);
 			path = Kofi;
 			sourceTree = "<group>";
@@ -223,12 +166,35 @@
 		017159462AEFEA20009279DA /* Business */ = {
 			isa = PBXGroup;
 			children = (
-				0103BB842AF12D33009ACF10 /* DesignTheme */,
-				0103BB502AF123C0009ACF10 /* Persistency */,
+				0103BB8E2AF168FD009ACF10 /* Features */,
 				0103BB4B2AF1239A009ACF10 /* Models */,
-				0103BB4A2AF12387009ACF10 /* MachineLearning */,
+				0103BB842AF12D33009ACF10 /* Branding */,
+				0103BB502AF123C0009ACF10 /* Persistency */,
 			);
 			path = Business;
+			sourceTree = "<group>";
+		};
+		01845B2A2AF2C1820051F182 /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+				01845B2B2AF2C18B0051F182 /* RatingAction.swift */,
+				01845B2D2AF2C71D0051F182 /* RatingMapper.swift */,
+				017159472AEFEA69009279DA /* RatingEffects.swift */,
+				012F94072AF2DBEB00205E42 /* RatingState.swift */,
+				01C1BE6B2AF01F7D00042751 /* CoffeeRecommendation.mlmodel */,
+			);
+			path = Rating;
+			sourceTree = "<group>";
+		};
+		01845B2F2AF2C89D0051F182 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				01845B302AF2C8B50051F182 /* ExploreAction.swift */,
+				01845B322AF2C8D10051F182 /* ExploreMapper.swift */,
+				01845B342AF2C8EB0051F182 /* ExploreEffects.swift */,
+				012F94092AF2DC1000205E42 /* ExploreState.swift */,
+			);
+			path = Explore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +213,9 @@
 			dependencies = (
 			);
 			name = Kofi;
+			packageProductDependencies = (
+				01845B282AF2BD420051F182 /* GeoKit */,
+			);
 			productName = Kofi;
 			productReference = 0167EC5C2AEC45D9006469C1 /* Kofi.app */;
 			productType = "com.apple.product-type.application";
@@ -275,6 +244,9 @@
 				Base,
 			);
 			mainGroup = 0167EC532AEC45D9006469C1;
+			packageReferences = (
+				01845B272AF2BD420051F182 /* XCLocalSwiftPackageReference "../../Kits/GeoKit" */,
+			);
 			productRefGroup = 0167EC5D2AEC45D9006469C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -302,27 +274,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				0103BB4F2AF123B1009ACF10 /* Rating.swift in Sources */,
-				0103BB7C2AF12BAA009ACF10 /* Fonts.swift in Sources */,
-				0103BB522AF123C9009ACF10 /* MockDatabase.swift in Sources */,
-				0103BB762AF12B9D009ACF10 /* DesignTheme.swift in Sources */,
+				012F940A2AF2DC1000205E42 /* ExploreState.swift in Sources */,
+				0103BB8B2AF1664A009ACF10 /* KofiThemes.swift in Sources */,
+				01845B332AF2C8D10051F182 /* ExploreMapper.swift in Sources */,
+				01845B352AF2C8EB0051F182 /* ExploreEffects.swift in Sources */,
+				0103BB522AF123C9009ACF10 /* LocalDatabase.swift in Sources */,
+				0103BB922AF16B22009ACF10 /* Action.swift in Sources */,
 				0167EC622AEC45D9006469C1 /* ContentView.swift in Sources */,
-				0103BB832AF12BF0009ACF10 /* ColorScheme+Extension.swift in Sources */,
-				0103BB742AF127BF009ACF10 /* DesignSystemView.swift in Sources */,
-				0103BB7B2AF12BA8009ACF10 /* Shadow.swift in Sources */,
-				0103BB772AF12B9F009ACF10 /* DefaultTheme.swift in Sources */,
-				0103BB7E2AF12BAD009ACF10 /* Border.swift in Sources */,
 				01C1BE6C2AF01F7D00042751 /* CoffeeRecommendation.mlmodel in Sources */,
-				0103BB822AF12BEE009ACF10 /* Color+Extensions.swift in Sources */,
-				0103BB812AF12BEC009ACF10 /* DesignTokensKey.swift in Sources */,
+				01845B2C2AF2C18B0051F182 /* RatingAction.swift in Sources */,
 				0103BB862AF12D44009ACF10 /* KofiLightTheme.swift in Sources */,
-				0103BB7F2AF12BAE009ACF10 /* Padding.swift in Sources */,
-				0103BB802AF12BB0009ACF10 /* Colors.swift in Sources */,
-				0103BB792AF12BA3009ACF10 /* DesignTokens.swift in Sources */,
+				01845B2E2AF2C71D0051F182 /* RatingMapper.swift in Sources */,
+				012F94082AF2DBEB00205E42 /* RatingState.swift in Sources */,
+				0135C1602AF18ED100CA541F /* ForYouCoffeeView.swift in Sources */,
+				01845B312AF2C8B50051F182 /* ExploreAction.swift in Sources */,
 				0167EC602AEC45D9006469C1 /* KofiApp.swift in Sources */,
-				017159482AEFEA69009279DA /* Recommender.swift in Sources */,
-				0103BB782AF12BA1009ACF10 /* DesignThemeMode.swift in Sources */,
+				017159482AEFEA69009279DA /* RatingEffects.swift in Sources */,
 				0103BB4D2AF123A5009ACF10 /* Coffee.swift in Sources */,
-				0103BB7A2AF12BA7009ACF10 /* Opacity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +502,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		01845B272AF2BD420051F182 /* XCLocalSwiftPackageReference "../../Kits/GeoKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../Kits/GeoKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01845B282AF2BD420051F182 /* GeoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GeoKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0167EC542AEC45D9006469C1 /* Project object */;
 }

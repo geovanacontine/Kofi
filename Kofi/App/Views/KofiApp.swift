@@ -6,17 +6,21 @@
 //
 
 import SwiftUI
+import GeoKit
 
 @main
 struct KofiApp: App {
     
-    private var supportedThemes: [DesignTheme] = [KofiLightTheme()]
+    @State var state = AppState.shared
     
     var body: some Scene {
         WindowGroup {
-            DesignSystemView(themes: supportedThemes) {
-                ContentView()
+            DesignSystemView(themes: KofiThemes.supportedThemes) {
+                NavigationStack {
+                    ContentView()
+                }
             }
+            .environment(state)
         }
     }
 }

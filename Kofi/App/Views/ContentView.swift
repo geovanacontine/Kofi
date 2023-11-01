@@ -6,26 +6,25 @@
 //
 
 import SwiftUI
+import GeoKit
 
 struct ContentView: View {
+    
+    @Environment(AppState.self) var state
+    
     var body: some View {
-        VStack {
-            Text("Kofi")
-                .style(
-                    .largeTitle,
-                    weight: .bold,
-                    color: .highlight(color: .feedbackNegative)
-                )
-            
-            Rectangle()
-                .color(.feedbackAlert)
-                .frame(width: 100, height: 100)
-                .cornerRadius(size: .circle)
-                .shadow(type: .thick)
+        ScrollView(showsIndicators: false) {
+            VStack(spacing: PaddingSize.md.rawValue) {
+                SectionHeaderView("For You") {
+                    ForYouCoffeeView()
+                }
+                
+                SectionHeaderView("Popular") {
+                    ForYouCoffeeView()
+                }
+            }
+            .padding(.vertical, size: .xxs)
         }
+        .navigationTitle("Kofi")
     }
-}
-
-#Preview {
-    ContentView()
 }
