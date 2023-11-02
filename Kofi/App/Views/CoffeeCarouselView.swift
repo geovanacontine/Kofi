@@ -1,14 +1,14 @@
 //
-//  ForYouCoffeeView.swift
+//  CoffeeCarouselView.swift
 //  Kofi
 //
-//  Created by Geovana Contine on 31/10/23.
+//  Created by Geovana Contine on 02/11/23.
 //
 
 import SwiftUI
 import GeoKit
 
-struct ForYouCoffeeView: View {
+struct CoffeeCarouselView: View {
     
     @Environment(AppState.self) var state
     
@@ -26,7 +26,7 @@ struct ForYouCoffeeView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .padding(size: .xxs)
                         }
-                        .frame(width: 150, height: 200)
+                        .frame(width: 150, height: 150)
                         
                         Text(coffee.name)
                             .style(.subheadline, weight: .bold)
@@ -37,9 +37,6 @@ struct ForYouCoffeeView: View {
                 }
             }
             .padding(.horizontal, size: .xxxs)
-        }
-        .task {
-            await Action.run(.explore(.listAllCoffees))
         }
     }
 }

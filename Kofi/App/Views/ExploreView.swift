@@ -1,14 +1,14 @@
 //
-//  ContentView.swift
+//  ExploreView.swift
 //  Kofi
 //
-//  Created by Geovana Contine on 27/10/23.
+//  Created by Geovana Contine on 31/10/23.
 //
 
 import SwiftUI
 import GeoKit
 
-struct ContentView: View {
+struct ExploreView: View {
     
     @Environment(AppState.self) var state
     
@@ -16,15 +16,18 @@ struct ContentView: View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: PaddingSize.md.rawValue) {
                 SectionHeaderView("For You") {
-                    ForYouCoffeeView()
+                    CoffeeCarouselView()
                 }
                 
                 SectionHeaderView("Popular") {
-                    ForYouCoffeeView()
+                   CoffeeCarouselView()
                 }
             }
             .padding(.vertical, size: .xxs)
         }
         .navigationTitle("Kofi")
+        .task {
+            await Action.run(.explore(.listAllCoffees))
+        }
     }
 }

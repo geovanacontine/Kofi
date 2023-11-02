@@ -18,7 +18,7 @@ struct RatingEffects {
         let output = CoffeeRecommendationOutput(features: results)
         let recommendedIds = output.recommendations
         
-        let database = LocalDatabase.coffees
+        let database: [Coffee] = []
         
         return recommendedIds.compactMap { id in
             database.first(where: { $0.id == id })

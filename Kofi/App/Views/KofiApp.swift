@@ -13,11 +13,15 @@ struct KofiApp: App {
     
     @State var state = AppState.shared
     
+    init() {
+        CKContext.shared.setup(identifier: "iCloud.br.com.geovanacontine.Kofi", databaseType: .public)
+    }
+    
     var body: some Scene {
         WindowGroup {
             DesignSystemView(themes: KofiThemes.supportedThemes) {
                 NavigationStack {
-                    ContentView()
+                    ExploreView()
                 }
             }
             .environment(state)

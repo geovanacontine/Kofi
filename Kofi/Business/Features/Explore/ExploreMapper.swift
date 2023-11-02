@@ -6,14 +6,29 @@
 //
 
 import Foundation
+import GeoKit
 
 struct ExploreMapper {
-    let state: AppState
-    let effects = ExploreEffects()
+    
+    private let state: AppState
+    private let effects: ExploreEffectsProtocol
+    
+    init(
+        state: AppState,
+        effects: ExploreEffectsProtocol = ExploreEffects()
+    ) {
+        self.state = state
+        self.effects = effects
+    }
 }
 
 extension ExploreMapper {
     func listAllCoffees() async {
-        state.explore.allCoffees = LocalDatabase.coffees
+        do {
+            state.explore.allCoffees = try await effects.fetchAllCoffeesFromCloudKit()
+            state.explore.isShowingFetchError = false
+        } catch {
+            state.explore.isShowingFetchError = true
+        }
     }
 }

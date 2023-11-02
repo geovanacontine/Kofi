@@ -5,21 +5,20 @@
 //  Created by Geovana Contine on 31/10/23.
 //
 
-import Foundation
+import CloudKit
+import GeoKit
 
+@CKModel
 struct Coffee {
     let id: String
     let name: String
     let author: String
     let sweetness: Double
     let intensity: Double
-    let cupSize: CupSize
+    let cupSize: String
     let instructions: String
+    
+    var cupSizeType: CupSize {
+        .init(rawValue: cupSize) ?? .large
+    }
 }
-
-enum CupSize {
-    case small
-    case large
-}
-
-extension Coffee: Identifiable {}

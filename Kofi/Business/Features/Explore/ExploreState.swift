@@ -9,4 +9,5 @@ import Foundation
 
 struct ExploreState {
     var allCoffees: [Coffee] = []
+    var isShowingFetchError = false
 }
