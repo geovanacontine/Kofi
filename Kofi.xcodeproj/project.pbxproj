@@ -179,8 +179,8 @@
 			children = (
 				01845B2B2AF2C18B0051F182 /* RatingAction.swift */,
 				01845B2D2AF2C71D0051F182 /* RatingMapper.swift */,
-				017159472AEFEA69009279DA /* RatingEffects.swift */,
 				012F94072AF2DBEB00205E42 /* RatingState.swift */,
+				017159472AEFEA69009279DA /* RatingEffects.swift */,
 				01C1BE6B2AF01F7D00042751 /* CoffeeRecommendation.mlmodel */,
 			);
 			path = Rating;
@@ -191,8 +191,8 @@
 			children = (
 				01845B302AF2C8B50051F182 /* ExploreAction.swift */,
 				01845B322AF2C8D10051F182 /* ExploreMapper.swift */,
-				01845B342AF2C8EB0051F182 /* ExploreEffects.swift */,
 				012F94092AF2DC1000205E42 /* ExploreState.swift */,
+				01845B342AF2C8EB0051F182 /* ExploreEffects.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
