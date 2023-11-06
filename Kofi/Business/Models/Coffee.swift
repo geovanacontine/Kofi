@@ -5,7 +5,6 @@
 //  Created by Geovana Contine on 31/10/23.
 //
 
-import CloudKit
 import GeoKit
 
 @CKModel

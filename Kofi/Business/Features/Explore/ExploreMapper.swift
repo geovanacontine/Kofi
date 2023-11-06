@@ -25,7 +25,7 @@ struct ExploreMapper {
 extension ExploreMapper {
     func listAllCoffees() async {
         do {
-            state.explore.allCoffees = try await effects.fetchAllCoffeesFromCloudKit()
+            state.explore.allCoffees = try await effects.fetchAllCoffeesFromCloudKitWithLogger()
             state.explore.isShowingFetchError = false
         } catch {
             state.explore.isShowingFetchError = true

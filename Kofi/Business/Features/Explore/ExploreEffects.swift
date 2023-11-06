@@ -8,9 +8,13 @@
 import Foundation
 import GeoKit
 
+// MARK: - Protocol
+
 protocol ExploreEffectsProtocol {
-    func fetchAllCoffeesFromCloudKit() async throws -> [Coffee]
+    func fetchAllCoffeesFromCloudKitWithLogger() async throws -> [Coffee]
 }
+
+// MARK: - Init
 
 struct ExploreEffects {
     
@@ -21,7 +25,16 @@ struct ExploreEffects {
     }
 }
 
+// MARK: - API
+
 extension ExploreEffects: ExploreEffectsProtocol {
+    
+    @Logger(
+        "Fetching all coffees from CloudKit...",
+        success: "Coffees loaded from CloudKit",
+        error: "Failed to fetch coffees from CloudKit",
+        feature: "Explore"
+    )
     func fetchAllCoffeesFromCloudKit() async throws -> [Coffee] {
         try await context.fetch(withPredicate: .init(value: true), withDerivedProperties: false)
     }

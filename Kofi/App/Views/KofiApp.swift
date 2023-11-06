@@ -15,6 +15,7 @@ struct KofiApp: App {
     
     init() {
         CKContext.shared.setup(identifier: "iCloud.br.com.geovanacontine.Kofi", databaseType: .public)
+        GeoLogger.shared.setupSubsystem(named: "br.com.geovanacontine.Kofi")
     }
     
     var body: some Scene {
@@ -25,6 +26,9 @@ struct KofiApp: App {
                 }
             }
             .environment(state)
+            .onAppear {
+                GeoLogger.shared.view.notice("Kofi session started")
+            }
         }
     }
 }

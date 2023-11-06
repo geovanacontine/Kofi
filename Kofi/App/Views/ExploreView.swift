@@ -29,5 +29,6 @@ struct ExploreView: View {
         .task {
             await Action.run(.explore(.listAllCoffees))
         }
+        .addOnAppearLog()
     }
 }
