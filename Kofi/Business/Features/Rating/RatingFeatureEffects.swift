@@ -1,5 +1,5 @@
 //
-//  RatingEffects.swift
+//  RatingFeatureEffects.swift
 //  Kofi
 //
 //  Created by Geovana Contine on 30/10/23.
@@ -8,7 +8,11 @@
 import Foundation
 import CoreML
 
-struct RatingEffects {
+protocol RatingFeatureEffectsProtocol {
+    
+}
+
+struct RatingFeatureEffects: RatingFeatureEffectsProtocol {
     func recommend(usingRatings ratings: [Rating]) throws -> [Coffee] {
         let model = try CoffeeRecommendation(configuration: MLModelConfiguration()).model
         let items = ratings.reduce(into: [String: Double]()) { $0[$1.coffeeId] = $1.value }

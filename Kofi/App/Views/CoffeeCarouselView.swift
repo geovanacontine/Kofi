@@ -10,12 +10,12 @@ import GeoKit
 
 struct CoffeeCarouselView: View {
     
-    @Environment(AppState.self) var state
+    @Environment(Store.self) var store
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: PaddingSize.xxxs.rawValue) {
-                ForEach(state.explore.allCoffees) { coffee in
+                ForEach(store.state.explore.allCoffees) { coffee in
                     VStack(alignment: .leading) {
                         ZStack {
                             Rectangle()

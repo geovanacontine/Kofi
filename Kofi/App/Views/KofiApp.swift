@@ -11,7 +11,7 @@ import GeoKit
 @main
 struct KofiApp: App {
     
-    @State var state = AppState.shared
+    @State var store = Store()
     
     init() {
         CKContext.shared.setup(identifier: "iCloud.br.com.geovanacontine.Kofi", databaseType: .public)
@@ -25,7 +25,7 @@ struct KofiApp: App {
                     ExploreView()
                 }
             }
-            .environment(state)
+            .environment(store)
             .onAppear {
                 GeoLogger.shared.view.notice("Kofi session started")
             }

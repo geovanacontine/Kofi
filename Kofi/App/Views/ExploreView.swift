@@ -10,7 +10,7 @@ import GeoKit
 
 struct ExploreView: View {
     
-    @Environment(AppState.self) var state
+    @Environment(Store.self) var store
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -27,7 +27,7 @@ struct ExploreView: View {
         }
         .navigationTitle("Kofi")
         .task {
-            await Action.run(.explore(.listAllCoffees))
+            await store.run(.explore(.listAllCoffees))
         }
         .addOnAppearLog()
     }

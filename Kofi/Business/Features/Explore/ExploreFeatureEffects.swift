@@ -1,33 +1,25 @@
 //
-//  ExploreEffects.swift
+//  ExploreFeatureEffects.swift
 //  Kofi
 //
-//  Created by Geovana Contine on 01/11/23.
+//  Created by Geovana Contine on 07/11/23.
 //
 
 import Foundation
 import GeoKit
 
-// MARK: - Protocol
-
-protocol ExploreEffectsProtocol {
+protocol ExploreFeatureEffectsProtocol {
     func fetchAllCoffeesFromCloudKitWithLogger() async throws -> [Coffee]
 }
 
-// MARK: - Init
-
-struct ExploreEffects {
+struct ExploreFeatureEffects: ExploreFeatureEffectsProtocol {
     
+    // External Dependencies
     private let context: CKContextProtocol
     
     init(context: CKContextProtocol = CKContext.shared) {
         self.context = context
     }
-}
-
-// MARK: - API
-
-extension ExploreEffects: ExploreEffectsProtocol {
     
     @Logger(
         "Fetching all coffees from CloudKit...",
